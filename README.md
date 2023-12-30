@@ -1,4 +1,7 @@
 # myleskoppelman.github.io
-hi
+This is my personal website.
 
-changing
+Things to add:
+cool pictures
+code ive made
+make it look cool
