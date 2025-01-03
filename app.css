@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 head{
     
     
@@ -9,54 +8,107 @@ h1{
 
 }
 #title{
+    font-size: 50px;
     background-image: url(images/A467137-R1-03-21A.JPG);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    padding: 20px;
-    margin: 20px;
-
+    padding: 10px;
+    margin: 10px;
 }
 
-#navi{
-    color: white;
-    font-size: 20px;
-    margin-left: 40px;
-    a:link, a:visited {
-        background-color: transparent;
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-      }
-      
-      a:hover, a:active {
-        color: #00ad3d
-      }
-}
 
 body{
-    background-color:#051746;
-    color:white;
-    font-family: "Source Code Pro", "consola";
-    
+  background-color:#051746;
+  color:white;
+  font-family: "Source Code Pro", "consola";
+  margin: 0;
+}
+#navi {
+  background-image: url(images/A467137-R1-03-21A.JPG);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+  margin: 20px;
+  display: flex; /* Flexbox for horizontal layout */
+  justify-content: left; /* Center the navigation links */
+  align-items: center; /* Align items vertically */
 }
 
-h1{
+#navi a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px; /* Space between links */
+  font-size: 25px;
 }
-h2{
-  margin: 40px
+
+#navi a:hover {
+  text-decoration: underline; /* Hover effect */
+  color: #051746;
 }
-h3{
-  text-align: center;
+
+/* Main content layout */
+.main {
+  display: flex; /* Flexbox for splitting the left and right sides */
+  height: calc(100vh - 50px); /* Subtract navbar height */
 }
-h4{
-  margin: 40px
+
+.left{
+  flex: 1; 
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-end; /* Align items to the right */
+  justify-content: flex-start;
+  color: white;
+  background-image: url(images/A467137-R1-03-21A.JPG);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
 }
-h5{
-  margin: 40px
+
+.right {
+  flex: 2; 
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-end; /* Align items to the right */
+  justify-content: flex-start;
+  color: white;
+  margin: 20px;
 }
+
+.column {
+  display: flex;         /* Use flexbox to arrange paragraphs side by side */
+  gap: 20px;             /* Adds space between the paragraphs */
+  width: 100%;
+}
+
+.left-column {
+  flex: 1;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-size: 30px;
+}
+
+.right-column {
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex: 2;
+}
+
+
+
+img {
+  max-width: 80%; /* Ensure images fit inside the container */
+  height: auto;
+}
+
 
 #audio{
   margin: auto;
@@ -75,6 +127,31 @@ h5{
   padding: 10px;
   border: solid;
 }
-=======
 
->>>>>>> 55b2479 (edited bruh)
+.full-width-line {
+  width: 100%; /* Makes the line span the full width */
+  border: 1px solid #fff; /* White line, adjust color as needed */
+  margin: 10px 0; /* Adds some space above and below the line */
+}
+
+#headings{
+  font-size: 20;
+  font-weight: 700;
+}
+
+.boldtxt{
+  font-weight: 700;
+}
+
+.centered-image {
+  display: block;       /* Makes the image a block element */
+  margin-left: auto;    /* Automatically set left margin */
+  margin-right: auto;   /* Automatically set right margin */
+  padding: 10px;
+}
+
+#warning{
+  font-size: 30px;
+  padding: 10px;
+  margin: 10px;
+}
